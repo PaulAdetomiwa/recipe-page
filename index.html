@@ -4,74 +4,188 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link href="./assets/fonts/outfit/Outfit-VariableFont_wght.ttf" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/fonts/young-serif/YoungSerif-Regular.ttf">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Recipe page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+    }
+    
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+
+    @font-face {
+      font-family: 'Outfit';
+      src: url(./assets/fonts/outfit/static/Outfit-Black.ttf) format('ttf'),
+           url(./assets/fonts/outfit/static/Outfit-Bold.ttf) format('ttf'), 
+           url(./assets/fonts/outfit/static/Outfit-ExtraBold.ttf) format('ttf'), 
+           url(./assets/fonts/outfit/static/Outfit-ExtraLight.ttf) format('ttf'), 
+           url(./assets/fonts/outfit/static/Outfit-Light.ttf) format('ttf'), 
+           url(./assets/fonts/outfit/static/Outfit-Medium.ttf) format('ttf'), 
+           url(./assets/fonts/outfit/static/Outfit-Regular.ttf) format('ttf'), 
+           url(./assets/fonts/outfit/static/Outfit-SemiBold.ttf) format('ttf'), 
+           url(./assets/fonts/outfit/static/Outfit-Thin.ttf) format('ttf'), 
+           url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format('ttf');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Young Serif';
+      src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format('ttf');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: hsl(30, 54%, 90%);
+      padding: 50px;
+      overflow-wrap: normal;
+    }
+
+    .container {
+      background-color: hsl(0, 0%, 100%);
+      width: 500px;
+      height: 150vh;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      padding: 25px;
+    } 
+
+    .one, .one-point-one, .two, .three, .four, .five {
+      width: 100%;
+      font-size: 12px;
+    }
+
+    .one {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .one img {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+
+    .one-point-one {
+      padding-bottom: 10px;
+    }
+
+    .one-point-one h1 {
+      font-family: 'Young Serif', sans-serif;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    .two {
+      background-color: hsl(330, 100%, 98%);
+      border-radius: 15px;
+      width: 100%;
+      letter-spacing: 1px;
+      text-indent: 20px;
+      font-weight: 400;
+    }
+
+    .two h3 {
+      color: hsl(332, 51%, 32%);
+      text-indent: 20px;
+    }
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="one">
+      <img src="./assets/images/image-omelette.jpeg" alt="omelette-recipe">
+    </div>
+    <div class="one-point-one">
+      <h1>Simple Omelette Recipe</h1>
 
-  Simple Omelette Recipe
+      <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+      to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+    </div>
+    <div class="two">
+      <h3>Preparation time</h3>
+      <ul>
+        <li><b>Total:</b> Approximately 10 minutes</li>
+        <li><b>Preparation:</b> 5 minutes</li>
+        <li><b>Cooking:</b> 5 minutes</li>
+      </ul>
+    </div>
+    <div class="three">
+      <h2>Ingredients</h2>
+      <ul>
+      <li>2-3 large eggs</li>
+      <li>Salt, to taste</li>
+      <li>Pepper, to taste</li>
+      <li>1 tablespoon of butter or oil</li>
+      <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+    </div>
+    <div class="four">
+      <h2>Instructions</h2>
+      <ol>
+        <li>Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+        You can add a tablespoon of water or milk for a fluffier texture.</li>
+        <li>Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li>Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+        the eggs evenly coat the surface.</li>
+        <li>Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
+        middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        <li>Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
+        fillings. Let it cook for another minute, then slide it onto a plate.</li>
+        <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+        </ol>
+    </div>
+    <div class="five">
+      <h2>Nutrition</h2>
 
-  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
 
-  Preparation time
+      <p>
+      Calories
+      277kcal
+      </p>
 
-  Total: Approximately 10 minutes
-  Preparation: 5 minutes
-  Cooking: 5 minutes
+      <p>
+      Carbs
+      0g
+      </p>
 
-  Ingredients
+      <p>
+      Protein
+      20g
+      </p>
 
-  2-3 large eggs
-  Salt, to taste
-  Pepper, to taste
-  1 tablespoon of butter or oil
-  Optional fillings: cheese, diced vegetables, cooked meats, herbs
+      <p>
+      Fat
+      22g
+      </p>
 
-  Instructions
-
-  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.
-
-  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
-
-  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.
-
-  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.
-
-  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.
-
-  Enjoy: Serve hot, with additional salt and pepper if needed.
-
-  Nutrition
-
-  The table below shows nutritional values per serving without the additional fillings.
-
-  Calories
-  277kcal
-
-  Carbs
-  0g
-
-  Protein
-  20g
-
-  Fat
-  22g
-  
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Paul Adetomiwa</a>.
   </div>
 </body>
 </html>
