@@ -25,7 +25,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- https://github.com/PaulAdetomiwa/blog-preview-card/blob/main/index.html
+- https://github.com/PaulAdetomiwa/recipe-page/blob/main/index.html
 
 ## My process
 
@@ -34,52 +34,53 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Grid
+- Flexbox
 
 ### What I learned
 
 ```html
-<div class="container">
-  <div class="first_half">
-    <img src="assets/images/illustration-article.svg" alt="">
-  </div>
-  <div class="second_half">
-    <h3>Learning</h3>
+<p>
+        <span id="first">Calories</span>
+        <span id="second">277kcal</span>
+      </p>
 
-    <p>Published 21 Dec 2023</p>
+      <p>
+        <span id="first">Carbs</span>
+        <span id="second">0g</span>    
+      </p>
 
-    <h2>HTML & CSS foundations</h2>
+      <p>
+        <span id="first">Protein</span>
+        <span id="second">20g</span>   
+      </p>
 
-    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
-
-    <div class="me"><img src="assets/images/image-avatar.webp" alt=""><span>Greg Hooper</span></div>
-  </div>
-</div>
+      <p>
+      <span id="first">Fat</span>
+      <span id="second">22g</span>
+      </p>
 ```
-- This part was a bit tricky. My idea was to cut up the .container div into two parts, two divs without borders, in a column. This would overlap the .container div with no space left, making it easier to input elements without them scattering.
+- I did not want to use the <table> tag, to make it more challenging, and it turned out well and responsive.
 
 ```css
-.container {
-      font-family: 'Figtree', sans-serif;
-      background-color: hsl(0, 0%, 100%);
-      width: 350px;
-      height: 500px;
-      border-radius: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      box-shadow: 8px 8px 0 black; 
-      position: relative;
-      overflow: hidden;
+#first {
+      font-style: normal;
+      width: 50%;
+      text-indent: 20px;
+      border-bottom: 1px solid hsl(30, 18%, 87%);
+      padding: 0 0 10px 0;
+      margin: 0;
     }
 
-    .first_half, .second_half {
-      position: relative; 
-      width: 90%; 
+    #second {
+      color: hsl(14, 45%, 36%); 
+      font-weight: 700;
+      width: 50%;
+      border-bottom: 1px solid hsl(30, 18%, 87%);
+      padding: 0 0 10px 0;
+      margin: 0;
     }
 ```
-- This is how, using CSS, I was successfully able to divide .container into two parts, which would later be the containers for the other elements within the webpage.
-
-- I also set a minimum height for the body to ensure responsiveness. 
+- It seems repetitive, but the modification this format allows outweigh the drawback of being repetitive, which made it an easy choice for me. 
 
 ## Author
 
