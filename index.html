@@ -16,6 +16,7 @@
     .attribution { 
       font-size: 11px; 
       text-align: center; 
+      padding-top: 20px;
     }
     
     .attribution a { 
@@ -62,7 +63,7 @@
     .container {
       background-color: hsl(0, 0%, 100%);
       width: 500px;
-      height: 150vh;
+      height: 152vh;
       border-radius: 15px;
       display: flex;
       flex-direction: column;
@@ -88,20 +89,26 @@
     }
 
     .one-point-one {
-      padding-bottom: 10px;
+      padding-bottom: 5px;
+      margin: 0;
     }
 
     .one-point-one h1 {
       font-family: 'Young Serif', sans-serif;
-      font-weight: 400;
-      letter-spacing: 1px;
+      font-weight: 500;
+      margin: 10px 0 0 0;
+    }
+
+    .one-point-one p {
+      color: hsl(30, 10%, 34%);
+      margin: 10px 0;
     }
 
     .two {
       background-color: hsl(330, 100%, 98%);
+      color: hsl(30, 10%, 34%);
       border-radius: 15px;
       width: 100%;
-      letter-spacing: 1px;
       text-indent: 20px;
       font-weight: 400;
     }
@@ -110,6 +117,115 @@
       color: hsl(332, 51%, 32%);
       text-indent: 20px;
     }
+    
+    .two ul li {
+      padding-bottom: 5px;
+    }
+
+    .three {
+      display: flex;
+      flex-direction: column;
+      color: hsl(30, 10%, 34%);
+      width: 100%;
+      font-weight: 400;
+      padding-bottom: 20px;
+      border-bottom: 1px solid hsl(30, 18%, 87%);
+      margin: 0;
+    }
+
+    .three h2 {
+      font-family: 'Young Serif', sans-serif;
+      font-weight: 500;
+      color: hsl(14, 45%, 36%);
+      margin: 10px 0;
+    }
+
+    .three ul {
+      margin: 0;
+      padding-left: 15px;
+    }
+
+    .three ul li {
+      text-indent: 10px;
+      padding-bottom: 5px;
+    }
+
+    .four {
+      padding: 20px 0 10px 0;
+      display: flex;
+      flex-direction: column;
+      color: hsl(30, 10%, 34%);
+      width: 100%;
+      font-weight: 400;
+      border-bottom: 1px solid hsl(30, 18%, 87%);
+      margin: 0;
+    }
+
+    .four h2 {
+      padding: 0;
+      margin: 0 0 10px 0;
+      font-family: 'Young Serif', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: hsl(14, 45%, 36%);
+    }
+
+    .four ol {
+      margin: 0;
+      padding-left: 15px;
+    }
+
+    .four ol li {
+      text-align: justify;
+      text-indent: -1px;
+      padding-left: 15px;
+      margin-bottom: 10px;
+    }
+
+    .five {
+      padding: 20px 0 10px 0;
+      display: flex;
+      flex-direction: column;
+      color: hsl(30, 10%, 34%);
+      width: 100%;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    .five h2 {
+      padding: 0;
+      margin: 0 0 15px 0;
+      font-family: 'Young Serif', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: hsl(14, 45%, 36%);
+    }
+
+    .five p {
+      margin: 0 0 15px 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    #first {
+      font-style: normal;
+      width: 50%;
+      text-indent: 20px;
+      border-bottom: 1px solid hsl(30, 18%, 87%);
+      padding: 0 0 10px 0;
+      margin: 0;
+    }
+
+    #second {
+      color: hsl(14, 45%, 36%); 
+      font-weight: 700;
+      width: 50%;
+      border-bottom: 1px solid hsl(30, 18%, 87%);
+      padding: 0 0 10px 0;
+      margin: 0;
+    }
+
   </style>
 </head>
 <body>
@@ -144,17 +260,17 @@
     <div class="four">
       <h2>Instructions</h2>
       <ol>
-        <li>Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+        <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
         You can add a tablespoon of water or milk for a fluffier texture.</li>
-        <li>Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</li>
-        <li>Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+        <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
         the eggs evenly coat the surface.</li>
-        <li>Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
+        <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
         middle, sprinkle your chosen fillings over one half of the omelette.</li>
-        <li>Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
+        <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
         fillings. Let it cook for another minute, then slide it onto a plate.</li>
-        <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
-        </ol>
+        <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
     </div>
     <div class="five">
       <h2>Nutrition</h2>
@@ -162,23 +278,23 @@
       <p>The table below shows nutritional values per serving without the additional fillings.</p>
 
       <p>
-      Calories
-      277kcal
+        <span id="first">Calories</span>
+        <span id="second">277kcal</span>
       </p>
 
       <p>
-      Carbs
-      0g
+        <span id="first">Carbs</span>
+        <span id="second">0g</span>    
       </p>
 
       <p>
-      Protein
-      20g
+        <span id="first">Protein</span>
+        <span id="second">20g</span>   
       </p>
 
       <p>
-      Fat
-      22g
+      <span id="first">Fat</span>
+      <span id="second">22g</span>
       </p>
 
     </div>
