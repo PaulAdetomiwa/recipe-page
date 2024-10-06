@@ -59,7 +59,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
       <span id="second">22g</span>
       </p>
 ```
-- I did not want to use the <table> tag, to make it more challenging, and it turned out well and responsive.
+- I did not want to use the ```html <table> ``` tag, to make it more challenging, and it turned out well and responsive.
 
 ```css
 #first {
